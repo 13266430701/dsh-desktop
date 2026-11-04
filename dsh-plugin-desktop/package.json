@@ -392,8 +392,8 @@
     "vitest": "4.1.8"
   },
   "build": {
-    "appId": "ai.deepseek.dsh.desktop",
-    "productName": "DSH Desktop",
+    "appId": "com.dafeiyu.desktop",
+    "productName": "大肥鱼",
     "asar": false,
     "afterPack": "./scripts/verify-packaged-runtime.ts",
     "afterAllArtifactBuild": "./scripts/verify-electron-fuses.ts",
@@ -430,7 +430,7 @@
       "extendInfo": {
         "CFBundleAllowMixedLocalizations": true,
         "CFBundleDevelopmentRegion": "en",
-        "NSMicrophoneUsageDescription": "DSH Desktop uses the microphone for voice input.",
+        "NSMicrophoneUsageDescription": "大肥鱼 uses the microphone for voice input.",
         "CFBundleLocalizations": [
           "en",
           "zh_CN"
@@ -472,7 +472,7 @@
           ]
         }
       ],
-      "artifactName": "DSH-Desktop-${version}-${arch}-Portable.${ext}",
+      "artifactName": "Dafeiyu-${version}-${arch}-Portable.${ext}",
       "icon": "build/app-icon.ico"
     },
     "nsis": {
@@ -486,10 +486,10 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "differentialPackage": false,
-      "shortcutName": "DSH Desktop",
+      "shortcutName": "大肥鱼",
       "uninstallerIcon": "build/app-icon.ico",
       "useZip": false,
-      "artifactName": "DSH-Desktop-${version}-${arch}-Setup.${ext}"
+      "artifactName": "Dafeiyu-${version}-${arch}-Setup.${ext}"
     },
     "linux": {
       "target": [
@@ -507,7 +507,7 @@
         }
       ],
       "icon": "build/icons",
-      "artifactName": "DSH-Desktop-${version}-${arch}.${ext}",
+      "artifactName": "Dafeiyu-${version}-${arch}.${ext}",
       "category": "Development",
       "synopsis": "Agentic coding desktop for the DeepSeek Harness",
       "maintainer": "DeepSeek <dsh-desktop@deepseek.com>",
